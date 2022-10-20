@@ -1,0 +1,14 @@
+:root {
+  margin: 0px;
+  padding: 0px;
+}
+
+.profile-img {
+  border-radius: 25%;
+  width: auto;
+  height: auto;
+}
+
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
