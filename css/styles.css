@@ -8,11 +8,13 @@
 }
 * {
   box-sizing: border-box;
+  /*border: 1px solid red;*/
+  margin: 0px;
+  padding: 0px;
 }
 
 :root {
-  margin: 0px;
-  padding: 0px;
+  --background-blue: #9bd8d7;
 }
 
 .profile-img {
@@ -23,7 +25,8 @@
 
 body {
   font-family: "caveat-regular";
-  background-color: #9bd8d7;
+  background-color: var(--background-blue);
+  /*background-image: linear-gradient(180deg,#9bd8d7, #62b6cb );*/
 }
 
 header {
@@ -47,7 +50,6 @@ h1 {
   list-style: none;
   justify-content: space-around;
   flex-wrap: wrap;
-
   gap: 10px;
   margin: auto;
 }
@@ -57,15 +59,13 @@ h1 {
   bottom: 0;
   text-decoration: none;
   text-align: center;
-  width: 10em;
-  height: 5ex;
   background-image: linear-gradient(135deg, #62b6cb 40%, #1b4965);
   border: none;
   border-radius: 40px;
   font-weight: bold;
   color: rgb(249, 249, 240);
   cursor: pointer;
-  padding: 20px;
+  padding: 10px;
 }
 
 .instagram {
