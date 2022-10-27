@@ -1,14 +1,115 @@
-:root {
+@font-face {
+  font-family: "caveat-regular";
+  src: url("../fonts/Caveat/static/Caveat-Regular.ttf");
+}
+@font-face {
+  font-family: "caveat-bold";
+  src: url("../fonts/Caveat/static/Caveat-Bold.ttf");
+}
+* {
+  box-sizing: border-box;
+  /*border: 1px solid red;*/
   margin: 0px;
   padding: 0px;
 }
 
+:root {
+  --background-blue: #9bd8d7;
+}
+
 .profile-img {
   border-radius: 25%;
-  width: auto;
+  width: 250px;
   height: auto;
 }
 
 body {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: "caveat-regular";
+  background-color: var(--background-blue);
+  /*background-image: linear-gradient(180deg,#9bd8d7, #62b6cb );*/
+}
+
+header {
+  margin-right: 40px;
+  position: sticky;
+  top: 20px;
+  z-index: 1;
+}
+
+h1 {
+  text-align: center;
+  padding: 10px;
+  margin: 20px;
+  margin-bottom: 40px;
+  background-color: rgb(249, 249, 240);
+  border-radius: 20px;
+}
+
+.nav-parent {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: auto;
+}
+
+.nav-child {
+  position: relative;
+  bottom: 0;
+  text-decoration: none;
+  text-align: center;
+  background-image: linear-gradient(135deg, #62b6cb 40%, #1b4965);
+  border: none;
+  border-radius: 40px;
+  font-weight: bold;
+  color: rgb(249, 249, 240);
+  cursor: pointer;
+  padding: 10px;
+}
+
+.instagram {
+  color: rgb(47, 166, 162);
+}
+
+.nav-child:hover {
+  background-image: linear-gradient(135deg, #62b6cb, #9bd3ef 40%);
+  bottom: 5px;
+  box-shadow: 2px 2px 5px #1b4965;
+}
+
+.instagram:hover {
+  border-radius: 40px;
+  font-family: "caveat-bold";
+  cursor: pointer;
+}
+
+.instagram:visited {
+  color: rgb(97, 28, 35);
+}
+
+.nav-child:active {
+  box-shadow: 4px 4px 10px #1b4965;
+}
+
+figure {
+  background-color: rgb(249, 249, 240);
+  border-radius: 100px;
+  padding: 40px;
+  margin: 30px;
+  margin-right: 50px;
+  padding: 40px;
+}
+
+figcaption {
+  position: relative;
+  left: 30px;
+}
+
+section {
+  margin: 30px;
+  margin-right: 50px;
+  padding: 40px;
+  border-radius: 100px;
+  background-color: rgb(249, 249, 240);
 }
